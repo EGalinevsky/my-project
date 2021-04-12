@@ -1,0 +1,10 @@
+.header{
+    height: 30px;
+    width: calc(100% - 250px);
+    color: black;
+    background-color: #fff;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: $z-index-header;
+}
