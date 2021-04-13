@@ -40,7 +40,10 @@ export const Sidebar = () => {
           </div>
         </div>
       </div>
-      <div className="sidebar_footer"></div>
+      <div className="sidebar_footer">
+          <a className='btn btn--red' href="">My works</a>
+          <button className='btn btn--blue' type='button'>Write me</button>
+      </div>
     </div>
   );
 };
