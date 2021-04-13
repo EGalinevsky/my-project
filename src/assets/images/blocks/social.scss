@@ -1,0 +1,10 @@
+.social{
+    display: flex;
+    justify-content: center;
+    padding-inline-start: 0;
+    
+    .social_item{
+        list-style-type: none;
+        margin: 0 .75rem;
+    }
+}
