@@ -5,20 +5,20 @@ export const Header = () => {
     <header className="header">
       <div className="header__left">
         <nav className="nav">
-          <ul>
-            <li>
+          <ul className='nav__wrapper'>
+            <li className='nav__item'>
               <a className="nav__link has-subnav" href="#">
                 Main
               </a>
               <ul className="subnav">
                 <li>
-                  <a href="">creating websites</a>
+                  <a className='subnav_link' href="#">Creating</a>
                 </li>
                 <li>
-                  <a href="">Lololol websites</a>
+                  <a className='subnav_link' href="#">Lololol</a>
                 </li>
                 <li>
-                  <a href="">lololoooolololos</a>
+                  <a className='subnav_link' href="#">Lololooo</a>
                 </li>
               </ul>
             </li>
@@ -42,7 +42,7 @@ export const Header = () => {
       </div>
       <div className="header__right">
         <nav className="nav">
-          <ul>
+          <ul className='nav__wrapper'>
             <li>
               <a className="nav__link" href="#">
                 Profile
