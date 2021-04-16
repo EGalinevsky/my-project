@@ -6,7 +6,9 @@ import Rectangle_4 from '../../assets/images/img_sidebar/stories/Rectangle_4.jpg
 
 export const Body = () => {
   return (
-    <div className="stories">
+    <div className='body'>
+      <div className="stories">
+      
       <div className="stories__item">
           <img className="stories__preview" src={Rectangle_1} alt=""/>
           <div className="stories__title">Отдыхаю на природе</div>
@@ -29,5 +31,10 @@ export const Body = () => {
           <time className="stories__data" datatime='2021-09-21'>28.08.2020</time>
       </div>
     </div>
+    <div className="addPosts">
+
+    </div>
+    </div>
+    
   );
 };
