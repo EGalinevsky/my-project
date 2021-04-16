@@ -1,0 +1,58 @@
+.addPosts{
+    margin-bottom: 3rem;
+    box-shadow: 0 15px 25px grba($black, .45);
+    background: $secondary;
+    border-radius: 5px;
+    padding: 1rem 1.2rem;
+    width: 100%;
+}
+
+.add-post__form{
+    display: flex;
+}
+
+.add-post__form-actions{
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add-post__text{
+    display: block;
+    width: 80%;
+    font-size: .9rem;
+    color: $white;
+    font-family: inferit;
+
+    border: none;
+    background: transparent;
+    resize: none;
+
+    &::placeholder{
+        color: #D2D2D2;
+    }
+}
+
+.add-post__file,
+.add-post-send{
+    width: 44px;
+    height: 44px;
+    display: block;   
+
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;    
+}
+
+.add-post__file{
+    background: #EBEBEB url('../img_sidebar/photo_1.svg') center no-repeat;
+
+    input{
+        display: none;
+    }
+}
+
+.add-post-send{
+   background: none;
+   margin-left: 1rem;
+}

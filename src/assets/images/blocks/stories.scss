@@ -1,8 +1,8 @@
 .stories{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 0 auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 195px;
-    grid-column-gap: 13px;
     margin-bottom: 2rem;
 }
 
