@@ -4,6 +4,7 @@ import Rectangle_2 from "../../assets/images/img_sidebar/stories/Rectangle_2.jpg
 import Rectangle_3 from "../../assets/images/img_sidebar/stories/Rectangle_3.jpg";
 import Rectangle_4 from "../../assets/images/img_sidebar/stories/Rectangle_4.jpg";
 import send_btn from "../../assets/images/img_sidebar/send_btn.svg";
+import post2 from "../../assets/images/img_sidebar/Rectangle_5.jpg"
 
 export const Body = () => {
   return (
@@ -38,6 +39,7 @@ export const Body = () => {
           </time>
         </div>
       </div>
+      {/*stories ====== */}
       <div className="addPosts">
         <form className="add-post__form" action="/" method="post">
           <textarea className='add-post__text' name="post-text" placeholder="Add post"></textarea>
@@ -50,6 +52,39 @@ export const Body = () => {
             </button>
           </div>
         </form>
+      </div>
+      {/*addPosts ==== */}
+      <div className='post'>
+        <div className="post__content">
+          <p className="post__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, porro maiores. Est sint cupiditate nihil! Inventore voluptatum illo rem, ut quis optio nisi praesentium beatae dicta exercitationem possimus doloribus natus.
+          </p>
+        </div>
+        <div className="post__footer">
+            <ul className="post__data">
+              <li className='post__data-item'>
+                <time>21.06.2020</time>
+              </li>
+            </ul>
+        </div>
+      </div>
+      {/*/post/ ====== */}
+      <div className='post'>
+        <div className="post__header">
+          <img src={post2} alt=""/>
+        </div>
+        <div className="post__content">
+          <p className="post__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, porro maiores. Est sint cupiditate nihil! Inventore voluptatum illo rem, ut quis optio nisi praesentium beatae dicta exercitationem possimus doloribus natus.
+          </p>
+        </div>
+        <div className="post__footer">
+            <ul className="post__data">
+              <li className='post__data-item'>
+                <time>21.06.2020</time>
+              </li>
+            </ul>
+        </div>
       </div>
     </div>
   );
