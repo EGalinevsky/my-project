@@ -1,0 +1,43 @@
+.related{
+    border-bottom: 1px solid #3f3f3f;
+    padding: 2rem 0 .8rem;
+}
+
+.related__title{
+    font-size: 1rem;
+    color: $white;
+    font-weight: 500;
+    margin-bottom: 1.5re;
+
+    line-height: 1.1;
+}
+
+.related__list-item{
+    margin-bottom: 1.6rem;
+    width: 50%;
+    padding-right: 1.2rem;
+}
+
+.related__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.related__list-title{
+    font-size: .8rem;
+    color: khaki;
+    font-weight: 500;
+
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+
+    a{
+        color: inherit;
+    }
+}
+
+.related__list-date{
+    font-size: 0.8rem;
+    color: #828282;
+}

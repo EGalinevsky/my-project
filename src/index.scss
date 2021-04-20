@@ -15,6 +15,24 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.5;
 }
+h4{
+  margin: 0;
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: underline;
+  }
+}
+
+li{
+  list-style-type: none;
+}
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
