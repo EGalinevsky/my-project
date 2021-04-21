@@ -3,6 +3,8 @@ import { Header } from './components/Header/Header';
 import { Body } from './components/Body/Body';
 import { Sidebar } from './components/Sidebar/Sidebar';
 import { PostPage } from "./components/Body/PostPage";
+import { Works } from "./components/Body/Works";
+import { Search } from "./components/Body/Search";
 
 function App() {
   return (
@@ -16,7 +18,9 @@ function App() {
         </div>
         <main className='main'>
           {/* <Body /> */}
-          <PostPage />
+          {/* <PostPage /> */}
+          {/* <Works /> */}
+          <Search />
         </main>
       </div>
     </div>
