@@ -2,6 +2,7 @@ import React from "react";
 import post2 from "../../assets/images/img_sidebar/Rectangle_5.jpg";
 import share_1 from "../../assets/images/share_1.svg";
 import post_img from "../../assets/images/image.jpg";
+import Ellipse_2 from "../../assets/images/Ellipse_2.png";
 
 export const PostPage = () => {
   return (
@@ -93,18 +94,58 @@ export const PostPage = () => {
         {/* ======= */}
         <div className="add_comments">
           <h3 className="add_comments__title">Обсуждения</h3>
-            <form className="form__group" action="" method="post">
-              <textarea
-              className='form__control form__control--textarea'
-                name="comment-text"
-                placeholder="Текст комментария"
-              ></textarea>
-              <button className="btn btn--blue btn--comments" type="submit">
-                Отправить
-              </button>
-            </form>          
+          <form className="form__group" action="" method="post">
+            <textarea
+              className="form__control form__control--textarea"
+              name="comment-text"
+              placeholder="Текст комментария"
+            ></textarea>
+            <button className="btn btn--blue btn--comments" type="submit">
+              Отправить
+            </button>
+          </form>
         </div>
         {/* ======= */}
+        <ul className="comments">
+          <li className="comments__items">
+            <div className="comments__header">
+              <img className="comments__avatar" src={Ellipse_2} alt="" />
+              <div className="comments__author">
+                <div className="comments_name">Дмитрий Валак</div>
+                <time className="comments_pubdate">1 неделю назад</time>
+              </div>
+            </div>
+            <div className="comments__text">
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat
+              magni ut, repudiandae eaque exercitationem eligendi? Dolorum
+              molestias repellendus, voluptas recusandae officiis ad eligendi
+              molestiae dicta libero, ipsum quaerat vero doloribus.
+            </div>
+            <button className="comments__reply" type="button">
+              Answer
+            </button>
+            <ul className="comments">
+              <li className="comments__items">
+                <div className="comments__header">
+                  <img className="comments__avatar" src={Ellipse_2} alt="" />
+                  <div className="comments__author">
+                    <div className="comments_name">Дмитрий Валак</div>
+                    <time className="comments_pubdate">1 неделю назад</time>
+                  </div>
+                </div>
+                <div className="comments__text">
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Repellat magni ut, repudiandae eaque exercitationem eligendi?
+                  Dolorum molestias repellendus, voluptas recusandae officiis ad
+                  eligendi molestiae dicta libero, ipsum quaerat vero doloribus.
+                </div>
+                <button className="comments__reply" type="button">
+                  Answer
+                </button>
+              </li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   );
