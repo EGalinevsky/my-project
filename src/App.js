@@ -5,6 +5,7 @@ import { Sidebar } from './components/Sidebar/Sidebar';
 import { PostPage } from "./components/Body/PostPage";
 import { Works } from "./components/Body/Works";
 import { Search } from "./components/Body/Search";
+import { Profile } from "./components/Body/Profile";
 
 function App() {
   return (
@@ -20,7 +21,8 @@ function App() {
           {/* <Body /> */}
           {/* <PostPage /> */}
           {/* <Works /> */}
-          <Search />
+          {/* <Search /> */}
+          <Profile />
         </main>
       </div>
     </div>

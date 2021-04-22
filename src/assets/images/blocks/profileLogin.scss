@@ -1,0 +1,34 @@
+.profileCabinet{
+    display: flex;
+}
+
+.profileCabinet__form{
+    width: 340px;
+    
+}
+
+.profileCabinet__avatar{
+    flex-grow:1;
+    padding-left: 8rem;
+
+    img {
+        display: block;
+        width: 150px;
+        height: 150px;
+    }
+}
+
+.profileCabinet__file{
+    font-size: .9rem;
+    color: $white;
+    text-decoration: underline;
+    cursor: pointer;
+
+    &:hover{
+        text-decoration: none;
+    }
+
+    input{
+        display: none;
+    }
+}
