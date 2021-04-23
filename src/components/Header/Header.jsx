@@ -34,9 +34,9 @@ export const Header = () => {
               </a>
             </li>
             <li>
-              <a className="nav__link" href="#">
+              <NavLink className="nav__link" to="/search">
                 Аdvertisement
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>

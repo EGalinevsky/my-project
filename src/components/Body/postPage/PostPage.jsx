@@ -1,8 +1,8 @@
 import React from "react";
-import post2 from "../../assets/images/img_sidebar/Rectangle_5.jpg";
-import share_1 from "../../assets/images/share_1.svg";
-import post_img from "../../assets/images/image.jpg";
-import Ellipse_2 from "../../assets/images/Ellipse_2.png";
+import post2 from "../../../assets/images/img_sidebar/Rectangle_5.jpg";
+import share_1 from "../../../assets/images/share_1.svg";
+import post_img from "../../../assets/images/image.jpg";
+import Ellipse_2 from "../../../assets/images/Ellipse_2.png";
 
 export const PostPage = () => {
   return (

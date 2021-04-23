@@ -1,6 +1,6 @@
 import React from "react";
-import Works_1 from "./../../assets/images/Works_1.jpg";
-import Works_2 from "./../../assets/images/Works_2.jpg";
+import Works_1 from "./../../../assets/images/Works_1.jpg";
+import Works_2 from "./../../../assets/images/Works_2.jpg";
 
 export const Works = () => {
   return (
