@@ -5,6 +5,7 @@ import { NavLink } from "react-router-dom";
 import post3 from "../../../assets/images/img_sidebar/Rectangle_6.jpg";
 import { Stories } from "./stories/Stories";
 import { AddPosts } from "./addPost/AddPosts";
+import { Post } from "./post/Post";
 
 export const Body = () => {
   return (
@@ -13,23 +14,7 @@ export const Body = () => {
       {/*stories ====== */}
       <AddPosts />
       {/*addPosts ==== */}
-      <div className="post">
-        <div className="post__content">
-          <p className="post__text">
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, porro
-            maiores. Est sint cupiditate nihil! Inventore voluptatum illo rem,
-            ut quis optio nisi praesentium beatae dicta exercitationem possimus
-            doloribus natus.
-          </p>
-        </div>
-        <div className="post__footer">
-          <ul className="post__data">
-            <li className="post__data-item">
-              <time>21.06.2020</time>
-            </li>
-          </ul>
-        </div>
-      </div>
+      <Post />
       {/*/post/ ====== */}
       <div className="post">
         <div className="post__header">
@@ -88,7 +73,7 @@ export const Body = () => {
           </NavLink>
         </div>
       </div>
-      {/* ===== */}
+      {/*/post/ ====== */}
       <div className="post">
         <div className="post__header">
           <img src={post3} alt="" />
@@ -118,7 +103,7 @@ export const Body = () => {
           </NavLink>
         </div>
       </div>
-      {/* ===== */}
+      {/* post with img===== */}
 
       <ul className="pagination">
         <li className="pagination__item">
