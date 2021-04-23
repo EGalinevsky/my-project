@@ -5,7 +5,7 @@ import Works_2 from "./../../assets/images/Works_2.jpg";
 export const Works = () => {
   return (
     <div className="body">
-      <h1 className="page__title">Мои работы</h1>
+      <h1 className="page__title">My works</h1>
       <article className="work">
         <div className="work__preview">
           <img src={Works_1} alt="" />

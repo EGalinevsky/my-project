@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 export const Header = () => {
   return (
@@ -12,7 +13,7 @@ export const Header = () => {
               </a>
               <ul className="subnav">
                 <li>
-                  <a className='subnav_link' href="#">Creating</a>
+                  <NavLink className='subnav_link' to='/main'>Main</NavLink>
                 </li>
                 <li>
                   <a className='subnav_link' href="#">Lololol</a>
@@ -44,9 +45,9 @@ export const Header = () => {
         <nav className="nav">
           <ul className='nav__wrapper'>
             <li>
-              <a className="nav__link" href="#">
+              <NavLink className="nav__link" to="/profile">
                 Profile
-              </a>
+              </NavLink>
             </li>
           </ul>
         </nav>

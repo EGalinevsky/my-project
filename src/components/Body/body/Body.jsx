@@ -5,6 +5,7 @@ import Rectangle_3 from "../../assets/images/img_sidebar/stories/Rectangle_3.jpg
 import Rectangle_4 from "../../assets/images/img_sidebar/stories/Rectangle_4.jpg";
 import send_btn from "../../assets/images/img_sidebar/send_btn.svg";
 import post2 from "../../assets/images/img_sidebar/Rectangle_5.jpg";
+import { NavLink } from "react-router-dom";
 import post3 from "../../assets/images/img_sidebar/Rectangle_6.jpg";
 
 export const Body = () => {
@@ -101,9 +102,9 @@ export const Body = () => {
               <a href="#">Make saitov</a>
             </li>
           </ul>
-          <a className="post__read" href="#">
+          <NavLink className="post__read" to="/postPage">
             Read
-          </a>
+          </NavLink>
         </div>
       </div>
       {/* post with img===== */}
@@ -113,6 +114,12 @@ export const Body = () => {
           <h2 className="post__title">
             <a href="#">Bye new notebook from 150 000 $</a>
           </h2>
+          <p className="post__text">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, porro
+            maiores. Est sint cupiditate nihil! Inventore voluptatum illo rem,
+            ut quis optio nisi praesentium beatae dicta exercitationem possimus
+            doloribus natus.
+          </p>
         </div>
         <div className="post__footer">
           <ul className="post__data">
@@ -123,9 +130,9 @@ export const Body = () => {
               <a href="#">Продвижение видео</a>
             </li>
           </ul>
-          <a className="post__read" href="#">
-            Lief comment
-          </a>
+          <NavLink className="post__read" to="/postPage">
+            read
+          </NavLink>
         </div>
       </div>
       {/* ===== */}
@@ -153,9 +160,9 @@ export const Body = () => {
               <a href="#">Make saitov</a>
             </li>
           </ul>
-          <a className="post__read" href="#">
+          <NavLink className="post__read" to="/postPage">
             Read
-          </a>
+          </NavLink>
         </div>
       </div>
       {/* ===== */}

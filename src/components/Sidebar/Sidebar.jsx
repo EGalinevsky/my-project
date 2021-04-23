@@ -4,6 +4,8 @@ import user from "./../../assets/images/img_sidebar/user.jpg";
 import instagram from "./../../assets/images/img_sidebar/instagram_1.svg";
 import vk from "./../../assets/images/img_sidebar/vk_1.svg";
 import pinterest from "./../../assets/images/img_sidebar/pinterest_1.svg";
+import { NavLink } from "react-router-dom";
+import edit from "./../../assets/images/edit.png";
 
 export const Sidebar = () => {
   return (
@@ -14,7 +16,13 @@ export const Sidebar = () => {
       <div className="sidebar_content">
         <div className="profile">
           <img className="avatar" src={user} alt="" />
-          <div className="profile_name">Eugene Galinevsky</div>
+          <div className="wrapper__profile">
+            <div className="profile_name">Eugene Galinevsky</div>
+            <NavLink to="/profile">
+              <img className="profile__edit" src={edit} alt="" />
+            </NavLink>
+          </div>
+
           <div className="profile_prof">React-developer</div>
           <ul className="social">
             <li className="social_item">
@@ -41,8 +49,14 @@ export const Sidebar = () => {
         </div>
       </div>
       <div className="sidebar_footer">
-          <a className='btn btn--red' href="">My works</a>
-          <button className='btn btn--blue' type='button'>Write me</button>
+        <NavLink className="btn btn--red" to="/works">
+          My works
+        </NavLink>
+        <NavLink to="/#">
+          <button className="btn btn--blue" type="button">
+            Write me
+          </button>
+        </NavLink>
       </div>
     </div>
   );

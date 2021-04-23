@@ -13,9 +13,30 @@
     box-shadow: 0 6px 8px rgba($black, .2);
 }
 
+.profile__edit{
+    width: 1rem;
+    height: 1rem;
+    
+}
+
+.wrapper__profile{
+    display: flex;
+    width: 100%;
+    height: 20px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    a{
+        margin-left: 1rem;
+        width: 1rem;
+        height: 1rem;
+    }
+}
+
 .subnav_link{
     display: block;
-    text-decoration: none;
+    
     color: $primary;
     font-size: .8rem;
     padding: .2rem .8rem; 
@@ -24,5 +45,6 @@
     &:hover{
         background-color: lighten($primary, 5%);
         color: $white;
+        text-decoration: none;
     }
 }
