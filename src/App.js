@@ -8,6 +8,7 @@ import { Profile } from "./components/Body/profile/Profile";
 import { Singup } from "./components/Body/singup/Singup";
 import { Search } from "./components/Body/search/Search";
 import { BrowserRouter, Route } from "react-router-dom";
+import { AboutMe } from "./components/Header/AboutMe/AboutMe";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
             <Route path='/profile' render={ ()=> <Profile />} />
             <Route path='/singup' render={ ()=> <Singup />} />
             <Route path='/search' render={ ()=> <Search />} />
+            <Route path='/aboutme' render={ ()=> <AboutMe />} />
           </main>
         </div>
       </div>
