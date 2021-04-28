@@ -2,9 +2,10 @@ import React from 'react'
 import { NavLink } from "react-router-dom";
 
 export const Post = (props) =>{
-  console.log(props)
     return(
+        
         <div className="post">
+          
           {props.img ? <div className="post__header">
               < img src={props.img} alt="" />
           </div> : <> </>}
@@ -24,7 +25,7 @@ export const Post = (props) =>{
               <time>21.06.2020</time>
             </li>
             <li className="post__data-item">
-              <a href="#">Make saitov</a>
+              <a href="#">{props.name}</a>
             </li>
           </ul>
           <NavLink className="post__read" to="/postPage">
