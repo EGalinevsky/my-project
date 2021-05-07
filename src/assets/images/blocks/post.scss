@@ -90,6 +90,12 @@
 
 .post__data-item{
     list-style-type: none;
+
+    button{
+        background: none;
+        border: none;
+        padding: 0;
+    }
 }
 
 .post__header{
@@ -139,4 +145,15 @@
 
 .post__actions--icon{
     margin-left: .4rem;
+}
+
+.image__like{
+    width: 14px;
+    margin: 0 10px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    &:hover{
+        box-shadow: 0 0px 25px rgba($siateBlue, .25);
+    }
 }
