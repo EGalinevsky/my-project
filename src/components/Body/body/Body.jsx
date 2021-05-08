@@ -9,7 +9,7 @@ import { Pagination } from "./pagination/Pagination";
 
 export const Body = () => {
 
-  let [blocksData, setAddPost] = useState([
+const [blocksData, setBlocksData] = useState([
     {
       text:
         "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, porromaiores. Est sint cupiditate nihil! Inventore voluptatum illo rem,ut quis opti o nisi praesentium beatae dicta exercitationem possimus     doloribus natus.",
@@ -48,7 +48,6 @@ export const Body = () => {
       countLike: 0
     },
   ])
-
   // const blocksData = ;
 
 
@@ -63,7 +62,7 @@ export const Body = () => {
       id: 5,
       countLike: 0
     }
-    setAddPost(blocksData.concat(newPost))   
+    setBlocksData(blocksData.concat(newPost))   
 }
 
 
