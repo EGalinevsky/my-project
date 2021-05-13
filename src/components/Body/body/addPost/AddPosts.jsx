@@ -10,6 +10,10 @@ export const AddPosts = (props) =>{
     SetaddPost('')
   }
 
+  const HandlerChangePost = (e) =>{
+    SetaddPost(e.target.value)
+  }
+
   
   return(
     <div className="addPosts">
@@ -19,7 +23,7 @@ export const AddPosts = (props) =>{
             name="post-text"
             value={addPost}
             placeholder="Add post"
-            onChange={(e)=> SetaddPost(e.target.value)}
+            onChange={HandlerChangePost}
           ></textarea>
           <div className="add-post__form-actions">
             <label className="add-post__file" for="add-post-file">
