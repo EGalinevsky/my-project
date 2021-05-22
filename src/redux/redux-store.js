@@ -1,11 +1,12 @@
-// import { combineReducers, createStore } from "redux"
+import { combineReducers, createStore } from "redux"
+import mainReducer from "./mainReducer";
 
-// let reducers = combineReducers({
-//     mainPage: MainReducer
+let reducers = combineReducers({
+    mainPage: mainReducer
 
-// });
+});
 
-// let store = createStore(reducers);
+let store = createStore(reducers);
 
 
-// export default store;
+export default store;

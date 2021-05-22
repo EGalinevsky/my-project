@@ -10,7 +10,8 @@ import { Search } from "./components/Body/search/Search";
 import { BrowserRouter, Route } from "react-router-dom";
 import { AboutMe } from "./components/Header/AboutMe/AboutMe";
 
-function App() {
+function App(props) {
+
   return (
     <BrowserRouter>
       <div className="App">
@@ -22,13 +23,13 @@ function App() {
             <Sidebar />
           </div>
           <main className='main'>
-            <Route path='/main' render={ ()=> <Body />} />
-            <Route path='/postPage' render={ ()=> <PostPage />} />
-            <Route path='/works' render={ ()=> <Works />} />
-            <Route path='/profile' render={ ()=> <Profile />} />
-            <Route path='/singup' render={ ()=> <Singup />} />
-            <Route path='/search' render={ ()=> <Search />} />
-            <Route path='/aboutme' render={ ()=> <AboutMe />} />
+            <Route path='/main' render={() => <Body state={props.state.mainPage} store={props.store.dispatch} dispatch={props.dispatch} />} />
+            <Route path='/postPage' render={() => <PostPage />} />
+            <Route path='/works' render={() => <Works />} />
+            <Route path='/profile' render={() => <Profile />} />
+            <Route path='/singup' render={() => <Singup />} />
+            <Route path='/search' render={() => <Search />} />
+            <Route path='/aboutme' render={() => <AboutMe />} />
           </main>
         </div>
       </div>

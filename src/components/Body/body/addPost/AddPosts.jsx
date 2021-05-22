@@ -1,17 +1,16 @@
 import React, { useEffect, useState } from 'react'
 import send_btn from "../../../../assets/images/img_sidebar/send_btn.svg";
+import { AddNewPostCreator, UpdafeNewMessagePostCreator } from '../../../../redux/mainReducer';
 
 export const AddPosts = (props) =>{
-
-  const [addPost, SetaddPost] = useState('') 
-
   const addPostClick = ()=>{
-    SetaddPost(props.addPostMessage)
-    SetaddPost('')
+    
+    props.dispatch(AddNewPostCreator())
   }
 
   const HandlerChangePost = (e) =>{
-    SetaddPost(e.target.value)
+    let text = e.target.value
+    props.dispatch(UpdafeNewMessagePostCreator(text))
   }
 
   
@@ -21,7 +20,7 @@ export const AddPosts = (props) =>{
           <textarea
             className="add-post__text"
             name="post-text"
-            value={addPost}
+            value={props.state.newMessages}
             placeholder="Add post"
             onChange={HandlerChangePost}
           ></textarea>
