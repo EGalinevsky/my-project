@@ -28,7 +28,7 @@ export const Post = (props) => {
             <a href="#">{props.name}</a>
           </li>
           <li className="post__data-item">
-            <button onClick={() => setCountLike(countLike + 1)}>
+            <button onClick={() => setCountLike(prev => prev + 1)}>
               <img className="image__like" src={props.like} alt="" />
             </button>
           </li>

@@ -23,7 +23,7 @@ function App(props) {
             <Sidebar />
           </div>
           <main className='main'>
-            <Route path='/main' render={() => <Body state={props.state.mainPage} store={props.store.dispatch} dispatch={props.dispatch} />} />
+            <Route path='/main' render={() => <Body state={props.state.mainPage} store={props.store} dispatch={props.dispatch} />} />
             <Route path='/postPage' render={() => <PostPage />} />
             <Route path='/works' render={() => <Works />} />
             <Route path='/profile' render={() => <Profile />} />

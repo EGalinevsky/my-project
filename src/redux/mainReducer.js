@@ -45,7 +45,7 @@ let initialState = {
             countLike: 0
         },
     ],
-    newMessages: 'frfrfr',
+    newMessages: ' ',
 }
 
 export const mainReducer = (state = initialState, action) => {
