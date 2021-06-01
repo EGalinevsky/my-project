@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 
 export const Post = (props) => {
+  
   const [countLike, setCountLike] = useState(0);
 
   return (

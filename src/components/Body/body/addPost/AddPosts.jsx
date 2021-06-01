@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import send_btn from "../../../../assets/images/img_sidebar/send_btn.svg";
-import { AddNewPostCreator, UpdafeNewMessagePostCreator } from '../../../../redux/mainReducer';
 
 export const AddPosts = (props) =>{
-
-
+  
+  console.log('fef')
   const addPostClick = ()=>{  
     props.addPostfromContainer()
   }
@@ -22,7 +21,7 @@ export const AddPosts = (props) =>{
           <textarea
             className="add-post__text"
             name="post-text"
-            value={props.state.newMessages}
+            value={props.newMessages}
             placeholder="Add post"
             onChange={HandlerChangePost}
           ></textarea>

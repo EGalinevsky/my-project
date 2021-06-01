@@ -1,19 +1,32 @@
 import React from 'react'
 import { AddNewPostCreator, UpdafeNewMessagePostCreator } from '../../../../redux/mainReducer';
 import { AddPosts} from './AddPosts';
+import {connect} from 'react-redux'
 
-export const AddPostsContainer = (props) =>{
+
+
+let mapStateToProps = (state) =>{
   
-  let state = props.store.getState()
-  console.log(state)
-  const addPostfromContainer = ()=>{  
-    props.store.dispatch(AddNewPostCreator())
+  return{
+    mainPage: state.mainPage.mainPage,
+    newMessages: state.mainPage.newMessages
   }
-
-  const updateNewPostFromContainer = (text) =>{
-    props.store.dispatch(UpdafeNewMessagePostCreator(text))
-  }
-
   
-  return <AddPosts addPostfromContainer={addPostfromContainer} updateNewPostFromContainer={updateNewPostFromContainer} state={state}/>  
 }
+
+
+let mapDispatchToProps = (dispatch) =>{
+  return{
+    addPostfromContainer:()=>{
+     dispatch(AddNewPostCreator())
+    },
+    updateNewPostFromContainer:(text)=>{
+      dispatch(UpdafeNewMessagePostCreator(text))
+    }
+  }
+}
+
+const AddPostsContainer = connect(
+  mapStateToProps,mapDispatchToProps)(AddPosts)
+
+export default AddPostsContainer;

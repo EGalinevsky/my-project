@@ -11,7 +11,6 @@ import { BrowserRouter, Route } from "react-router-dom";
 import { AboutMe } from "./components/Header/AboutMe/AboutMe";
 
 function App(props) {
-
   return (
     <BrowserRouter>
       <div className="App">
@@ -23,7 +22,7 @@ function App(props) {
             <Sidebar />
           </div>
           <main className='main'>
-            <Route path='/main' render={() => <Body state={props.state.mainPage} store={props.store} dispatch={props.dispatch} />} />
+            <Route path='/main' render={() => <Body store={props.store}/>} />
             <Route path='/postPage' render={() => <PostPage />} />
             <Route path='/works' render={() => <Works />} />
             <Route path='/profile' render={() => <Profile />} />

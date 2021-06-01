@@ -3,7 +3,6 @@ import mainReducer from "./mainReducer";
 
 let reducers = combineReducers({
     mainPage: mainReducer
-
 });
 
 let store = createStore(reducers);

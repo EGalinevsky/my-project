@@ -49,9 +49,9 @@ let initialState = {
 }
 
 export const mainReducer = (state = initialState, action) => {
- 
+
     switch (action.type) {
-        case ADD_NEW_POST:
+        case ADD_NEW_POST: {
             let newPost = {
                 header: "New Post",
                 text: state.newMessages,
@@ -59,14 +59,19 @@ export const mainReducer = (state = initialState, action) => {
                 like: like,
                 id: 5,
                 countLike: 0
-            }
-            state.mainPage.push(newPost)
-            debugger
-            state.newMessages = ''
-            return state;
-        case UPDATE_NEW_MESSAGE_POST:
-            state.newMessages = action.newMessage
-            return state
+            };
+            return {
+                ...state,
+                newMessages: '',
+                mainPage: [...state.mainPage, newPost],
+            };
+        }
+        case UPDATE_NEW_MESSAGE_POST: {
+            return {
+                ...state,
+                newMessages: action.newMessage
+            };
+        }
         default:
             return state
     }
