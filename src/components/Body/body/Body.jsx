@@ -8,28 +8,14 @@ import like from "../../../assets/images/like.png"
 import { Pagination } from "./pagination/Pagination";
 
 export const Body = (props) => {
-  const storePostsArray = props.store.getState().mainPage.mainPage
   
-
-  const PostsElement = storePostsArray.map((post) => (
-    <Post
-      header={post.header}
-      text={post.text}
-      name={post.name}
-      id={post.id}
-      img={post.img}
-      key={post.id}
-      like={post.like}      
-      countLike={post.countLike}      
-    />
-  ));
   return (
     <div className="body">
       <Stories />
       {/*stories ====== */}
       <AddPostsContainer />
       {/*addPosts ==== */}
-      {PostsElement}
+   
       <Pagination />
     </div>
   );

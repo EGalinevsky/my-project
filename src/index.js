@@ -6,7 +6,7 @@ import App from './App';
 import { Provider } from "react-redux"
 
 
-let rerender = () => {
+
   ReactDOM.render(
     <React.StrictMode>
       <Provider store={store}>
@@ -16,11 +16,4 @@ let rerender = () => {
     </React.StrictMode>,
     document.getElementById('root')
   );
-}
-
-rerender(store.getState())
-store.subscribe(() => {
-  let state = store.getState()
-  rerender(state)
-})
 

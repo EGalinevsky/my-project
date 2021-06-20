@@ -1,23 +1,38 @@
-import React from 'react'
+import React from "react";
 import send_btn from "../../../../assets/images/img_sidebar/send_btn.svg";
+import { Post } from "../post/Post";
 
-export const AddPosts = (props) =>{
-  
-  console.log('fef')
-  const addPostClick = ()=>{  
-    props.addPostfromContainer()
-  }
+export const AddPosts = (props) => {
+  debugger;
+  console.log("fef");
+  const addPostClick = () => {
+    props.addPostfromContainer();
+  };
 
-  const HandlerChangePost = (e) =>{
-    let text = e.target.value
-    props.updateNewPostFromContainer(text)
-  }
+  const HandlerChangePost = (e) => {
+    let text = e.target.value;
+    props.updateNewPostFromContainer(text);
+  };
 
+  const storePostsArray = props.mainPage;
 
-  
-  return(
-    <div className="addPosts">
-        <form className="add-post__form" action="/" >
+  const PostsElement = storePostsArray.map((post) => (
+    <Post
+      header={post.header}
+      text={post.text}
+      name={post.name}
+      id={post.id}
+      img={post.img}
+      key={post.id}
+      like={post.like}
+      countLike={post.countLike}
+    />
+  ));
+
+  return (
+    <div>
+      <div className="addPosts">
+        <form className="add-post__form" action="/">
           <textarea
             className="add-post__text"
             name="post-text"
@@ -29,11 +44,17 @@ export const AddPosts = (props) =>{
             <label className="add-post__file" for="add-post-file">
               <input type="file" id="add-post-file" />
             </label>
-            <button onClick={addPostClick} className="add-post-send" type="button">
+            <button
+              onClick={addPostClick}
+              className="add-post-send"
+              type="button"
+            >
               <img src={send_btn} alt="send" />
             </button>
           </div>
         </form>
       </div>
-  )
-}
+      {PostsElement}
+    </div>
+  );
+};
