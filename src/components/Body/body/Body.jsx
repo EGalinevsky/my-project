@@ -15,7 +15,7 @@ export const Body = (props) => {
       {/*stories ====== */}
       <AddPostsContainer />
       {/*addPosts ==== */}
-   
+    
       <Pagination />
     </div>
   );
